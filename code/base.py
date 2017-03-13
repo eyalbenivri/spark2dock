@@ -10,8 +10,8 @@ def main(spark):
     spark = spark # type: SparkSession
     sc = spark.sparkContext #type: SparkContext
     rdd = sc.parallelize(range(1,1000))
-    print rdd.sum()
-    print rdd.count()
+    print(rdd.sum())
+    print(rdd.count())
 
 
 if __name__ == "__main__":
